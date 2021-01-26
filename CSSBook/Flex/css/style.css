@@ -1,0 +1,46 @@
+*{
+    margin:0;
+}
+#flex1 .button{
+    position:center;
+}
+
+#flex1{
+    display:flex;
+    background-color:tomato;
+    height:100px;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: space-around;
+    align-items:center;
+    align-content:space-around;
+    text-align: center;
+    /*vertical-align: middle;*/
+    /*horiz-align: center;*/
+}
+#flex2{
+    display:flex;
+    background-color:coral;
+    height:auto;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: space-around;
+    align-items:center;
+    align-content:space-around;
+    text-align: center;
+
+    /*vertical-align: middle;*/
+    /*horiz-align: center;*/
+}
+#flex1 .inside{
+    width:100px;
+    height:100px;
+    margin:auto;
+    background-color:yellow;
+}
+#flex2 .inside{
+    width:100px;
+    height:100px;
+    margin:auto;
+    background-color:yellow;
+}

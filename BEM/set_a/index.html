@@ -1,0 +1,157 @@
+<!--https://seesparkbox.com/foundry/bem_by_example-->
+
+<button class=”btn”></button>
+
+<style>
+    .btn {}
+</style>
+<!--x-->
+
+<!-- DO THIS -->
+<button class="btn btn--secondary"></button>
+
+<style>
+    .btn {
+        display: inline-block;
+        color: blue;
+    }
+    .btn--secondary {
+        color: green;
+    }
+</style>
+<!--x-->
+
+<!-- DON'T DO THIS -->
+<button class="btn--secondary"></button>
+
+<style>
+    .btn--secondary {
+        display: inline-block;
+        color: green;
+    }
+</style>
+<!--x-->
+
+<!-- DO THIS -->
+<figure class="photo">
+    <img class="photo__img" src="me.jpg">
+    <figcaption class="photo__caption">Look at me!</figcaption>
+</figure>
+
+<style>
+    .photo { } /* Specificity of 10 */
+    .photo__img { } /* Specificity of 10 */
+    .photo__caption { } /* Specificity of 10 */
+</style>
+
+<!-- DON'T DO THIS -->
+<figure class="photo">
+    <img src="me.jpg">
+    <figcaption>Look at me!</figcaption>
+</figure>
+
+<style>
+    .photo { } /* Specificity of 10 */
+    .photo img { } /* Specificity of 11 */
+    .photo figcaption { } /* Specificity of 11 */
+</style>
+<!--x-->
+
+<!-- DO THIS -->
+<figure class="photo">
+    <img class="photo__img" src="me.jpg">
+    <figcaption class="photo__caption">
+        <blockquote class="photo__quote">
+            Look at me!
+        </blockquote>
+    </figcaption>
+</figure>
+
+<style>
+    .photo { }
+    .photo__img { }
+    .photo__caption { }
+    .photo__quote { }
+</style>
+
+
+<!-- DON'T DO THIS -->
+<figure class="photo">
+    <img class="photo__img" src="me.jpg">
+    <figcaption class="photo__caption">
+        <blockquote class="photo__caption__quote"> <!-- never include more than one child element in a class name -->
+            Look at me!
+        </blockquote>
+    </figcaption>
+</figure>
+
+<style>
+    .photo { }
+    .photo__img { }
+    .photo__caption { }
+    .photo__caption__quote { }
+</style>
+<!--x-->
+
+<figure class="photo">
+    <img class="photo__img photo__img--framed" src="me.jpg">
+    <figcaption class="photo__caption photo__caption--large">Look at me!</figcaption>
+</figure>
+
+<style>
+    .photo__img--framed {
+        /* incremental style changes */
+    }
+    .photo__caption--large {
+        /* incremental style changes */
+    }
+</style>
+<!--x-->
+
+<!-- DO THIS -->
+<figure class="photo photo--highlighted">
+    <img class="photo__img" src="me.jpg">
+    <figcaption class="photo__caption">Look at me!</figcaption>
+</figure>
+
+<style>
+    .photo--highlighted .photo__img { }
+    .photo--highlighted .photo__caption { }
+</style>
+
+<!-- DON'T DO THIS -->
+<figure class="photo">
+    <img class="photo__img photo__img--highlighted" src="me.jpg">
+    <figcaption class="photo__caption photo__caption--highlighted">Look at me!</figcaption>
+</figure>
+
+<style>
+    .photo__img--highlighted { }
+    .photo__caption--highlighted { }
+</style>
+<!--x-->
+
+<!-- DO THIS -->
+<div class="some-thesis some-thesis--fast-read">
+    <div class="some-thesis__some-element"></div>
+</div>
+
+<style>
+    .some-thesis { }
+    .some-thesis--fast-read { }
+    .some-thesis__some-element { }
+</style>
+
+<!-- DON'T DO THIS -->
+// These class names are harder to read
+<div class="somethesis somethesis--fastread">
+    <div class="somethesis__someelement"></div>
+</div>
+
+<style>
+    .somethesis { }
+    .somethesis--fastread { }
+    .somethesis__someelement { }
+</style>
+<!--x-->
+

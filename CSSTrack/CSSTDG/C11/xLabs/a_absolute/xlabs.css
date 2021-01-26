@@ -1,0 +1,70 @@
+/*.clearfix:before,*/
+/*.clearfix:after {*/
+    /*content: ".";*/
+    /*display: block;*/
+    /*height: 0;*/
+    /*overflow: hidden;*/
+/*}*/
+/*.clearfix:after { clear: both; }*/
+/*.clearfix { zoom: 1 ;} !* IE < 8 *!*/
+
+#box_1{
+    /*height: 100vh;*/
+    /*background: hotpink;*/
+}
+
+#TL p,#TR p,#BL p, #BR p {
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Stylish', sans-serif;
+    font-size: xx-large;
+}
+#TL{
+    position:absolute;
+    width:50%;
+    height:50%;
+    /*top:0cm;*/
+    /*left:0cm;*/
+    background:Tomato;
+
+
+}
+
+#TR{
+    position:absolute;
+    width:50%;
+    height:50%;
+    /*top:0cm;*/
+    left:50%;
+    background:DodgerBlue;
+}
+#BL{
+    position:absolute;
+    width:50%;
+    height:50%;
+    top:50%;
+    /*left:0cm;*/
+    background:Limegreen
+
+}
+#BR{
+    position:absolute;
+    width:50%;
+    height:50%;
+    top:50%;
+    /*left:calc(50% + 0mm);*/
+    left:50%;
+    background:Chocolate;
+
+}
+
+#BR, #BL{
+    border-top: 1px solid white;
+}
+
+#TL, #TR{
+    border-left: 1px solid white;
+}

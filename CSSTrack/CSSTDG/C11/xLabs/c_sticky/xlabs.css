@@ -1,0 +1,38 @@
+#container{
+
+    background: pink;
+}
+#s1{
+    position:fixed;
+    width:50%;
+    height:100vh;
+    top:1cm;
+    left:1cm;
+    background:tomato;
+}
+#s2{
+    position:fixed;
+    width:50%;
+    height:100vh;
+    top:2cm;
+    left:2cm;
+    background:DeepSkyBlue;
+}
+#s3{
+    position:fixed;
+    width:50%;
+    height:100vh;
+    top:3cm;
+    left:3cm;
+    background:Limegreen
+
+}
+#s4{
+    position:fixed;
+    width:50%;
+    height:100vh;
+    top:4cm;
+    left:4cm;
+    background:Chocolate;
+
+}

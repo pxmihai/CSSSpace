@@ -1,0 +1,5 @@
+/* Paragraphs that come immediately after any image */
+img + p {
+    font-style: italic;
+}
+#third{background-color:magenta;}

@@ -1,0 +1,79 @@
+/*https://css-tricks.com/practical-css-scroll-snapping/*/
+body{margin: 0;
+    scroll-snap-type:  y mandatory;
+    /*scroll-snap-points-y: repeat(100vh);*/
+
+    }
+
+section{
+    width:50vw;
+    height :100vh;
+    margin:10vh auto;
+    background-color:Tomato;
+    border:  solid;
+    /*  https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+    box-sizing: border-box;
+
+    display: flex; /*it considers each section a flex container*/
+    /*https://developer.mozilla.org/en-US/docs/Web/CSS/align-items*/
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+#model1{
+    padding: 1em;
+    border: thick double #32a1ce;;
+    margin:1vw ;
+    display: flex;
+    /*https://developer.mozilla.org/en-US/docs/Web/CSS/align-items*/
+    align-items: center;
+    justify-content: center;
+}
+#model2{
+    padding: 2em;
+    border: 1rem solid;
+    margin: 1.6em 20px;         /* top and bottom: 1.6em margin */
+                                /* left and right: 20px margin  */
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+
+}
+#model3{
+    padding: 1em;
+    border:dashed red;
+    margin: 10px 3% -1em;
+    display: flex;
+    align-items: end;
+    justify-content:space-around;
+}
+#model4{
+    padding: 1em;
+     border: 4mm ridge rgba(170, 50, 220, .6);
+    margin:1vw ;
+}
+#model5{
+    padding: 1em;
+    border: solid;
+    margin:1vw ;
+}
+#model6{
+    padding: 1em;
+    border: outset #f33;
+    margin:1vw ;
+}
+#model7{
+    border: 0.5rem outset pink;
+    outline: 0.5rem solid khaki;
+    box-shadow: 0 0 0 2rem skyblue;
+    border-radius: 12px;
+    font: bold 1rem sans-serif;
+    margin: 2rem;
+    padding: 1rem;
+    outline-offset: 0.5rem;
+}
+
+/*we made model1 a flex container and said that whatever is inside is centered
+if we were to add more to that flex container we would need to have divs inside
+ it and properly model those
+*/

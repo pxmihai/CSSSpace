@@ -1,0 +1,32 @@
+/*ID selector*/
+#second{
+    height:50vh;
+    width:75vw;
+    margin:0 auto;
+    background-color:turquoise;
+}
+/*attribute selector*/
+div[id="what"]
+{
+    width:40px;
+    height:40px;
+    background-color:maroon;
+    /*z-index: 1;*/
+}
+a[shit*="the"]{
+    font-style: italic;
+    margin:10px;
+}
+a[shit*="duck"]{
+    text-decoration: none;
+}
+a[shit*="quack"]{
+    background-color: lightblue;
+}
+a[shit*="fuck"]{
+    font-style:oblique;
+}
+
+#third{
+    display:grid;
+}

@@ -1,0 +1,35 @@
+
+#topleft{
+    position:fixed;
+    width:50%;
+    height:50%;
+    top:1cm;
+    left:1cm;
+    background:tomato;
+}
+#topright{
+    position:fixed;
+    width:50%;
+    height:50%;
+    top:2cm;
+    left:2cm;
+    background:DeepSkyBlue;
+}
+#bottomleft{
+    position:fixed;
+    width:50%;
+    height:50%;
+    top:3cm;
+    left:3cm;
+    background:Limegreen
+
+}
+#bottomright{
+    position:fixed;
+    width:50%;
+    height:50%;
+    top:4cm;
+    left:4cm;
+    background:Chocolate;
+
+}

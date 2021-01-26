@@ -1,0 +1,17 @@
+/*wes bos grid io
+https://cssgrid.io/*/
+
+.container {
+    display: grid;
+    grid-gap: 20px;
+
+    border: 10px solid var(--yellow);
+    grid-template-columns: repeat(5,1fr);
+}
+
+.item18{
+    background:tomato;
+    /*width:500px;*/
+    grid-column: span 2;
+    grid-row:span 3;
+}

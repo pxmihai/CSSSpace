@@ -1,0 +1,45 @@
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors*/
+
+/*
+html name attribute
+https://www.w3schools.com/tags/att_name.asp
+
+*/
+/*Universal selector*/
+*{
+    margin:0;
+}
+/*Type selector*/
+a:link {
+    background-color: yellow;
+}
+
+a:visited {
+    background-color: cyan;
+}
+
+a:hover {
+    background-color: lightgreen;
+}
+
+a:active {
+    background-color: hotpink;
+}
+/*Class selector*/
+
+.upper{
+    height:100px;
+    width:50vw;
+    background-color:tomato;
+    margin:0 auto;
+
+}
+
+.lower{
+    height:100px;
+    width:75vw;
+    background-color:chartreuse;
+    /* top | right | bottom | left */
+    margin: 5% 10% 0 10% ;
+
+}
