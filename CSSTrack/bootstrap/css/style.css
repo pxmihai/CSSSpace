@@ -25,7 +25,6 @@ row {
 @media (max-width: 575px) {
     .fix {
         background-color: #990b47;
-        margin-left: 10px;
     }
 
     body {
@@ -40,8 +39,8 @@ row {
         background-color: #a7631a
     }
     body {
-        margin-left:25px;
-        margin-right:25px;
+        margin-left:15px;
+        margin-right:15px;
     }
 }
 
@@ -50,6 +49,10 @@ row {
     .fix {
         background-color: #e67e22
     }
+    body {
+        margin-left:25px;
+        margin-right:25px;
+    }
 }
 
 /*// Large devices (desktops, 992px and up)*/
@@ -57,12 +60,20 @@ row {
     .fix {
         background-color: #2ecc71
     }
+    body {
+        margin-left:50px;
+        margin-right:50px;
+    }
 }
 
 /*// Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
     .fix {
         background-color: #bada55
+    }
+    body {
+        margin-left:75px;
+        margin-right:75px;
     }
 }
 
