@@ -39,6 +39,10 @@ row {
     .fix {
         background-color: #a7631a
     }
+    body {
+        margin-left:25px;
+        margin-right:25px;
+    }
 }
 
 /*// Medium devices (tablets, 768px and up)*/
