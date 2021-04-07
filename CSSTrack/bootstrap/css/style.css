@@ -33,6 +33,14 @@ row {
     border :10px solid #4c645e;
 
 }
+.card-title {
+    line-height: 1.5em;
+    min-height: 4.5em;
+}
+.card-text {
+    line-height: 1.5em;
+    min-height: 4.5em;
+}
 .fix {
     border: 1px dotted red;
 }
