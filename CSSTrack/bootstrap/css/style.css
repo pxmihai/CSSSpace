@@ -31,6 +31,7 @@ row {
 }
 .card {
     border :10px solid #4c645e;
+    margin-top: 20px;
 
 }
 .card-title {
